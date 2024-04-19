@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.L Palace Construções</title>
+
+  <link rel="stylesheet" href="/assets/css/geral.css">
+  <link rel="stylesheet" href="/assets/css/sobre.css">
+  <link rel="stylesheet" href="/assets/css/servico.css">
+  <link rel="stylesheet" href="/assets/css/contact.css">
+  <link rel="stylesheet" href="/assets/css/projeto.css">
+  <link rel="stylesheet" href="/assets/css/depoimento.css">
+
+  <link rel="icon" href="/assets/img/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header id="header" class="navbar">
+    <nav>
+      <div class="logo">A.L Palace Construções</div>
+      <div class="topo">
+        <ul class=" nav-links">
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre-nos">Sobre Nós</a></li>
+          <li><a href="#home">Home</a></li>
+
+
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <!-- Slider de destaque -->
+    <div class="slider-container">
+      <div class="slide active" style="background-image: url(/assets/img/casa_3.jpg);">
+        <div class="slide-text">
+          <h2>Transforme Seus Sonhos em Realidade</h2>
+          <p>Construímos sonhos com excelência e inovação,descubra como nossos projetos exclusivos podem tornar sua visão uma verdadeira obra-prima.</p>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url(/assets/img/casa_2.jpg);">
+        <div class="slide-text">
+          <h2>Experiência e Inovação ao Seu Serviço</h2>
+          <p>Explore nossas soluções sob medida e descubra como podemos transformar seus planos em sucesso.</p>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url(/assets/img/casa.jpg);">
+        <div class="slide-text">
+          <h2>Qualidade Que Você Pode Confiar</h2>
+          <p>Comprometidos com a excelência em cada detalhe, entregamos resultados que superam expectativas.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </section>
+
+  <section id="sobre-nos" class="about">
+    <!-- Sobre Nós -->
+    <div class="container_sobre">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Sobre Nós</h2>
+          <p>A.L Palace Construções conta com uma equipe de profissionais experientes para cada segmento. Atuamos no mercado oferecendo qualidade, segurança e agilidade, soluções práticas e econômicas para os nossos clientes, sem riscos e surpresas indesejáveis.<br>
+            Gerenciamos todo processo de reforma e manutenção para sua empresa ou residência, desde um simples reparo até uma construção com acabamento final.<br>
+            Contratos de manutenção anual para sua empresa para os serviços de Reparos, Limpeza, Jardinagem, Elétrica, Hidráulica, carpintaria, e Pintura.<br>
+            Somos comprometidos com a qualidade, inovação e satisfação do cliente. Nosso time de profissionais experientes está pronto para oferecer soluções eficazes para seus projetos de construção. <br> Entre em contato conosco hoje mesmo para iniciar o seu projeto!
+          </p>
+        </div>
+        <div class="about-image"">
+          <img src=" /assets/img/empresa.jpeg" alt="imagem">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="servicos" class="servicos">
+    <!-- Nossos Serviços -->
+    <div class="container_servico">
+      <h2>Nossos Serviços</h2>
+      <p>
+        Na A.L Palace Construções, estamos comprometidos em transformar sonhos em realidade. Com uma equipe de especialistas apaixonados e experientes, oferecemos uma variedade de serviços personalizados para atender às necessidades exclusivas de cada cliente
+        nossa missão é superar suas expectativas e criar espaços que inspirem e encantem. <br>
+        Nossa equipe experiente está pronta para realizar seus projetos com qualidade e eficiência.Entre em contato conosco hoje para dar vida aos seus projetos mais ambiciosos!
+      </p>
+      <ul class="services-list">
+        <li>Construção Residencial</li>
+        <li>Construção Comercial</li>
+        <li>Reformas em Geral</li>
+        <li>Design de Interiores</li>
+        <li>Consultoria em Construção</li>
+      </ul>
+  </section>
+
+
+  <section id="projetos" class="projects-section">
+    <!-- Projetos Destacados -->
+    <div class="container_projeto">
+      <h2 class="destaque">Projetos Destacados</h2>
+      <div class="project-gallery">
+        <div class="project-item" onclick="openModal('/assets/img/imagem-4.jpg')">
+          <img src="/assets/img/imagem_6.jpg" alt="Projeto 1">
+          <h3>Residencial jabaquara</h3>
+        </div>
+        <div class="project-item" onclick="openModal('projeto2.jpg')">
+          <img src="/assets/img/imagem_7 (1).jpg" alt="Projeto 2">
+          <h3>Habitar Prime</h3>
+        </div>
+        <div class="project-item" onclick="openModal('projeto3.jpg')">
+          <img src="/assets/img/chalé.jpg" alt="Projeto 3">
+          <h3>Chalé santo antonio do pinhal</h3>
+        </div>
+        <!-- Adicione mais projetos conforme necessário -->
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+
+
+    <section id="depoimentos" class="testimonials-section">
+      <!-- Depoimentos de Clientes -->
+      <div class="container_depoimento">
+        <h2>Depoimentos de Clientes</h2>
+        <div id="testimonialContainer" class="testimonial-container">
+          <div class="testimonial active">
+            <img src="/assets/img/homem_01.jpg" alt="Cliente 1">
+            <p>"Excelente serviço! Profissionais dedicados e eficientes. Recomendo a todos."</p>
+            <h3>Sebastian Ferreri</h3>
+          </div>
+          <div class="testimonial">
+            <img src="/assets/img/mulher_01.jpg" alt="Cliente 2">
+            <p>"Fiquei muito satisfeito com o resultado final do meu projeto. Obrigado A.L Palace Construções"</p>
+            <h3>Genevieve Cardoso</h3>
+          </div>
+          <!-- Adicione mais depoimentos conforme necessário -->
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+
+  <section id="contato" class="contact_bac">
+    <div class="container_contact">
+      <div class="contact-content">
+        <div class="contact-form">
+          <h2>Entre em Contato</h2>
+          <h1>Dúvidas ou informações</h1>
+          <p>
+            Se você tiver alguma pergunta ou precisar de mais informações, entre em contato conosco preenchendo o formulário abaixo ou ligue para (12) 991060131
+          </p>
+          <form id="contact-form" method="post" action="https://formsubmit.co/lapalaceconstrucoes@gmail.com">
+            <div>
+              <input type="text" name="name" placeholder="Seu Nome" required>
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Seu E-mail" required>
+            </div>
+            <div>
+              <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+            </div>
+            <div>
+              <button type="submit">Enviar Mensagem</button>
+            </div>
+            <div>
+              <input type="hidden" name="_subject" value="Cliente site">
+              <input type="text" name="_honey" style="display: none;">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5501/obg.html">
+              <input type="hidden" name="_template" value="table">
+
+            </div>
+          </form>
+        </div>
+        <div class="company-info">
+          <img src="/assets/img/cont.webp" alt="imagem">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodapé">
+    <!-- Footer -->
+  </footer>
+
+  <script src="/assets/js/principal.js"></script>
+</body>
+
+</html>

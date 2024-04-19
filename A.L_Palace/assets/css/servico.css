@@ -1,0 +1,149 @@
+.servicos {
+  margin: 0;
+  padding: 0px;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/imagem-4.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.container_servico {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container_servico p {
+  max-width: 100%;
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+  z-index: 0.9;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-list li {
+  color: #fb745d;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.container_servico h2 {
+  font-size: 2.5rem;
+  margin-top: 9rem;
+  padding: 1rem;
+  color: white;
+}
+
+.services-section p {
+  font-size: 2rem;
+}
+.container_servico li {
+  font-size: 25px;
+  margin-top: 50px;
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+  transition: transform 0.3s ease;
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .container_servico p {
+    max-width: 100%;
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+
+  .container_servico h2 {
+    font-size: 1rem;
+    margin-top: 9rem;
+  }
+
+  .container_servico li {
+    font-size: 1rem;
+    margin-top: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .services-list li {
+    font-size: 1rem;
+    margin-right: 0.1rem;
+  }
+  .container_servico h2 {
+    margin-top: 10rem;
+    font-size: 2rem;
+  }
+  .container_servico p {
+    font-size: 1.1rem;
+    margin: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container_servico {
+    padding: 0.5rem;
+  }
+  .container_servico p {
+    max-width: 100%;
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+
+  .container_servico h2 {
+    font-size: 1rem;
+    margin-top: 9rem;
+  }
+
+  .services-list li {
+    font-size: 0.5rem;
+    margin-right: 0.1rem;
+  }
+
+  .container_servico li {
+    font-size: 0.5rem;
+    margin-top: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container_servico h2 {
+    font-size: 1rem;
+    margin-top: 8rem;
+  }
+
+  .container_servico p {
+    font-size: 0.8rem;
+    margin: 0.5rem;
+  }
+
+  .services-list li {
+    font-size: 0.2rem;
+  }
+
+  .container_servico li {
+    font-size: 0.3rem;
+    margin-top: 0.5rem;
+  }
+  .services-list {
+    padding: 1rem;
+  }
+}

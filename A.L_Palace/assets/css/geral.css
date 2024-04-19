@@ -1,0 +1,128 @@
+body {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  max-width: 100%;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.logo {
+  transition: 1s;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background-color: #bdaaa0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.nav-links li {
+  margin: 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.nav-links li a {
+  color: burlywood;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #fb745d;
+}
+
+.slider-container {
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.active {
+  display: block;
+  opacity: 1;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+.prev {
+  left: 0.5rem;
+}
+
+.next {
+  right: 0.5rem;
+}
+
+footer {
+  max-width: 100%;
+  width: 100%;
+  background-color: #bdaaa0;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+  }
+  .nav-links li {
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .nav-links li {
+    margin: 0 0.2rem;
+    font-size: 0.8rem;
+  }
+}
